@@ -1,0 +1,25 @@
+public class Superpoder {
+
+    private String nome;
+    private int categoria;
+
+    public Superpoder(String nome, int categoria) {
+        this.nome = nome;
+        this.categoria = categoria;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getCategoria() {
+        return categoria;
+    }
+
+    public static void main(String[] args) {
+        Superpoder superpoderVoo = new Superpoder("Voo", 3);
+
+        System.out.println("Nome do superpoder: " + superpoderVoo.getNome());
+        System.out.println("Categoria do superpoder: " + superpoderVoo.getCategoria());
+    }
+}

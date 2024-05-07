@@ -1,0 +1,22 @@
+public class Jogo {
+
+    public static void main(String[] args) {
+        SuperHeroi superman = new SuperHeroi("Superman", "Clark Kent");
+        Vilao lexLuthor = new Vilao("Lex Luthor", "Alexander Luthor", 10);
+
+        Superpoder voo = new Superpoder("Voo", 100);
+        Superpoder superForca = new Superpoder("Super Força", 90);
+        Superpoder visaoRaioX = new Superpoder("Visão de Raio X", 80);
+        Superpoder superInteligencia = new Superpoder("Super Inteligência", 70);
+
+        superman.adicionaSuperpoder(voo);
+        superman.adicionaSuperpoder(superForca);
+        superman.adicionaSuperpoder(visaoRaioX);
+        superman.adicionaSuperpoder(superInteligencia);
+
+        Superpoder genioDoMal = new Superpoder("Gênio do Mal", 60);
+        Superpoder tecnologiaAvancada = new Superpoder("Tecnologia Avançada", 50);
+        lexLuthor.adicionaSuperpoder(genioDoMal);
+        lexLuthor.adicionaSuperpoder(tecnologiaAvancada);
+
+        Confronto confronto = new Confronto();
